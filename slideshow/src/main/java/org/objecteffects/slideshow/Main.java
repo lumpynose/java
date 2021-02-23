@@ -18,8 +18,7 @@ import org.apache.commons.cli.ParseException;
  */
 
 public class Main {
-    @SuppressWarnings("unused")
-    private static int pause = 5;
+    static int pause = 5;
     private static String dir = "/home/rusty/pics";
 
     public static void main(final String[] args) throws ParseException {

@@ -30,13 +30,13 @@ public class Slideshow extends JPanel implements ActionListener,
         WindowListener,
         ChangeListener {
     private static final long serialVersionUID = 1L;
-    final JLabel label;
-    int delay = 1000;
-    Timer timer;
-    int numPics = 0;
-    int picNum = 0;
-    List<Path> paths;
-    final Dimension windowSize;
+    private final JLabel label;
+    private final int delay = Main.pause * 1000;
+    private final Timer timer;
+    private final Dimension windowSize;
+    private int numPics = 0;
+    private int picNum = 0;
+    private List<Path> paths;
 
     static void createAndShowGUI() {
         // Create and set up the window.
@@ -80,7 +80,6 @@ public class Slideshow extends JPanel implements ActionListener,
     }
 
     public Slideshow(final Dimension _windowSize) {
-        // Add the ubiquitous "Hello World" label.
         this.label = new JLabel("label");
 
         add(this.label);
